@@ -6,7 +6,9 @@ A full-stack **MERN (MongoDB, Express, React + Vite, Node.js)** application to *
 ## 📂 Project Structure
 
 /client -> React + Vite Frontend
+
 /server -> Node.js + Express Backend
+
 /uploads -> Uploaded files directory (gitignored)
 
 
@@ -63,8 +65,8 @@ Frontend runs on: http://localhost:5173/
 
 
 ## 🎯 API Endpoints
-Method  |	Endpoint	   | Description
-POST	  | /upload      | Upload a file
+Method  |	Endpoint   | Description
+POST    | /upload      | Upload a file
 GET	    | /file/:fileid| Download a file by ID and increment download count
 
 
@@ -106,17 +108,25 @@ README.md
 
 ⚠️ Notes
 Ensure the uploads/ folder exists inside the server/ directory, otherwise uploads will fail.
+
 The .env file is gitignored — create it manually for your database connection.
+
 Frontend and backend run on different ports in development mode (5173 for frontend, 8000 for backend).
+
 Enable CORS in the backend for frontend-backend communication.
 
 
 ✅ To Do
 Add authentication for uploads/downloads.
+
 Restrict allowed file types and sizes.
+
 Implement frontend for listing all uploaded files.
+
 Add expiry links or secure download tokens.
+
 Deploy backend and frontend to Render/Vercel.
+
 Add unit tests for APIs.
 
 
