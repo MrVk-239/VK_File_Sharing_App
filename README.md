@@ -43,7 +43,7 @@ npm install
 
 Create a .env file in /server:
 PORT=8000
-MONGO_URI=mongodb+srv://vkrishnan2309:UitBHMVjojsc8N0j@cluster0.garryjm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+MONGO_URI=<your-mongodb-connection-string>
 
 Start the backend server:
 nodemon server.js
