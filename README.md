@@ -107,6 +107,7 @@ README.md
 
 
 ⚠️ Notes
+
 Ensure the uploads/ folder exists inside the server/ directory, otherwise uploads will fail.
 
 The .env file is gitignored — create it manually for your database connection.
@@ -117,6 +118,7 @@ Enable CORS in the backend for frontend-backend communication.
 
 
 ✅ To Do
+
 Add authentication for uploads/downloads.
 
 Restrict allowed file types and sizes.
