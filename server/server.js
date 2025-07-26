@@ -6,12 +6,15 @@ import cors from 'cors';
 DBconnection();
 
 
+const PORT = process.env.PORT || 8000
+
+
 const app = express();
 app.use(cors());
 
 app.use(routes)
 
-app.listen(8000, () => {
+app.listen(PORT, () => {
   console.log('Server is running on 8000');
 });
 export default app;
