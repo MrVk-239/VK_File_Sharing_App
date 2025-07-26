@@ -8,15 +8,15 @@ dotenv.config();
 DBconnection();
 
 
+const PORT = process.env.PORT || 8000
+
+
 const app = express();
 app.use(cors());
 
 app.use(routes)
 
-
-const PORT= process.env.PORT || 8000;
-
-app.listen(PORT, () => {
-  console.log(`Server is running on ${PORT}`);
+app.listen(8000, () => {
+  console.log('Server is running on 8000');
 });
 export default app;
