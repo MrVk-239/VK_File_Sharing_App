@@ -6,7 +6,7 @@ export const uploadImage=async(req,res)=>{
     }
     try {
         const file = await File.create(fileObj);
-        res.status(200).json({path:`http://localhost:8000/file/${file._id}`, message:"File uploaded successfully",file});
+        res.status(200).json({path:`https://vk-file-sharing-app.onrender.com/file/${file._id}`, message:"File uploaded successfully",file});
     } catch (error) {
         res.status(500).json({error: error.message});
     }
