@@ -2,6 +2,10 @@
 
 A full-stack **MERN (MongoDB, Express, React + Vite, Node.js)** application to **upload files, download them via link, and track download counts**.
 
+## 🌐 Live App:
+## Frontend: vk-file-sharing-app.vercel.app 
+Backend API: vk-file-sharing-app.onrender.com
+
 
 ## 📂 Project Structure
 
@@ -47,7 +51,10 @@ MONGO_URI=<your-mongodb-connection-string>
 
 Start the backend server:
 nodemon server.js
-Backend runs on: http://localhost:8000/
+Backend runs on http://localhost:8000 (dev mode)
+
+In production, it's deployed at:
+👉 https://vk-file-sharing-app.onrender.com
 
 
 ## 💻 Frontend Setup (/client)
@@ -61,7 +68,10 @@ npm install
 Start the React frontend:
 npm run dev
 
-Frontend runs on: http://localhost:5173/
+Frontend runs on http://localhost:5173 (dev mode)
+
+In production, it's live at:
+👉 https://vk-file-sharing-app.vercel.app/
 
 
 ## 🎯 API Endpoints
@@ -98,7 +108,7 @@ GET	    | /file/:fileid| Download a file by ID and increment download count
     /uploads            # Uploaded files directory (gitignored)
     /utils
         upload.js
-    .env
+    .env (gitignored)
     .gitignore
     package.json
     package-lock.json
@@ -126,8 +136,6 @@ Restrict allowed file types and sizes.
 Implement frontend for listing all uploaded files.
 
 Add expiry links or secure download tokens.
-
-Deploy backend and frontend to Render/Vercel.
 
 Add unit tests for APIs.
 
