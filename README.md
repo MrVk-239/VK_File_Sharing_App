@@ -117,6 +117,22 @@ GET	    | /file/:fileid| Download a file by ID and increment download count
 README.md
 
 
+
+⚠️ File Expiry Notice
+
+📁 Note: Uploaded files are stored temporarily on the backend server (Render Free Tier).
+Due to platform limitations, the uploaded files may be lost when the server:
+
+Goes idle (after ~15 minutes of inactivity)
+
+Restarts or redeploys
+
+Scales or encounters internal resets
+
+🕒 As a result, download links may stop working after 15–30 minutes.
+
+
+
 ⚠️ Notes
 
 Ensure the uploads/ folder exists inside the server/ directory, otherwise uploads will fail.
@@ -126,6 +142,7 @@ The .env file is gitignored — create it manually for your database connection.
 Frontend and backend run on different ports in development mode (5173 for frontend, 8000 for backend).
 
 Enable CORS in the backend for frontend-backend communication.
+
 
 
 ✅ To Do
